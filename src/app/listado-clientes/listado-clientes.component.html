@@ -1,0 +1,18 @@
+<h1>Listado clientes</h1>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>CIF</th>
+        <th>Dirección</th>
+        <th>Grupo</th>
+    </tr>
+    <!-- ngFor és un bucle que iterará fins que acabi el que ha de recorrer-->
+    <!-- cliente es un array de cada posicio de arrayHija, y anirem printat cada part
+    -->
+    <tr *ngFor="let cliente of arrayHija">
+        <td>{{cliente[0]}}</td>
+        <td>{{cliente[1]}}</td>
+        <td>{{cliente[2]}}</td>
+        <td>{{cliente[3]}}</td>
+    </tr>
+</table>
